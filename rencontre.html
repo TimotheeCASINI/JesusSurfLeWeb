@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <script src="https://kit.fontawesome.com/7b2336f025.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  href="rencontre.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="author" content="Timothée&Balthazar">
+    <meta name="description" content="L'église se modernise ! Accedez à toute les informations sur les grands personnages de la chrétienté, des quiz et bien plus encore !">
+    <title>JesusSurfLeWeb.com</title>
+    <script defer src="rencontre.js"></script>
+    <script>window.onload = function(){
+    var context = new AudioContext();}</script>
+  </head>
+  <body>
+      <header>
+        <div class="conteneur_titre">
+         <img class ="logo" src="https://w7.pngwing.com/pngs/988/529/png-transparent-jesus-christ-illustration-christian-cross-drawing-crucifixion-of-jesus-christ-christianity-logo-monochrome.png" style="float" alt="logo" title="logo">
+          <div class="titre">
+           <h1>JésusSurfLeWeb</h1>
+          </div>
+        </div>
+        <nav>
+          <ul class="navbar">
+            <li><a href="acceuil.html" title="Accueil">Accueil</a></li>
+            <li><a href="rencontre.html" title="Service de rencontre">Rencontre Un Fidèle</a></li>
+            <li><a href="quizz.html" title="Quizz">Testez vôtre foi</a></li>
+            <li><a href="toutsavoir.html" title="Les icônes de la chrétienté">Tout savoir</a></li>
+            <li><a href="#" title="NewsLetter">Rejoindre ton Seigneur</a></li>
+          </ul>
+        </nav>
+        <a class="contact" href="contact.html"><button>Contact</button></a>
+      </header>
+      
+     <main>
+      <section class=section1>
+        <h2>Bienvenu sur le service de rencontre de JesusSurfLeWeb !</h2>
+        <img class="img1" src="https://i.pinimg.com/originals/02/e5/13/02e5133e9bb4b5b013907526bcd2893e.png">
+        <img class="img2" src="https://prierenfamille.ch/mediasdoc/2018/09/notreperenfamille.png">
+        <div class="container2">
+          <div class="inner">
+            <span><i class="fas fa-info-circle fa-2x"></i></span>
+            <h1>Les fidèles de ton choix selon tes critères !</h1>
+            <p id="txt">Crée ton profil ou connecte toi pour commencer à converser avec les plus pieux ! La barre de recherche te permet de trouver des utilisateurs selon différents critères.</p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <img class="img" src="img1.png">
+          <div class="contact-form">
+            <div class="input-fields">
+
+              <input class="input" type="text" id="prename" name="user_prename" required maxlength="30" minlength="1" placeholder="Jésus" pattern = "[a-zA-ZàâæçéèêëîïôœùûüÿÀÂÆÇnÉÈÊËÎÏÔŒÙÛÜŸ-]+" required>
+
+              <!--<label for="name">Nom :</label>-->
+              <input class="input" type="text" id="name" name="user_name" required maxlength="30" minlength="1" placeholder="De Nazareth" pattern = "[a-zA-ZàâæçéèêëîïôœùûüÿÀÂÆÇnÉÈÊËÎÏÔŒÙÛÜŸ-]+" required>
+
+               <input class="input" type="email" id="id_user" name="id_user" required minlength="1" maxlength="60" placeholder="User ID" pattern = "[A-Za-z0-9]+" required>
+
+               <input class="input" type="password" name="pw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Mot de passe" title="Doit contenir au moins un chiffre et une lettre majuscule et minuscule, et au moins 8 caractères ou plus ">
+
+
+              <!--<label for="mail">e-mail :</label>-->
+              <input class="input" type="email" id="mail" name="user_mail" required minlength="1" maxlength="60" placeholder="jesus.christ@surfleweb.com" pattern = ".+@.+\..+" required>
+
+              <select class="input" name="user_role" id="role">
+
+              <option value="valeur1">Accordéonistes : Saint Bénilde</option>
+
+              <option value="valeur2">Amoureux : saint Valentin</option>
+
+              <option value="valeur3">Animaux : Saint Kevin</option>
+
+              <option value="valeur4">Causes désespérées : Saint Jude</option>
+
+              <option value="valeur5">Célibataire : Saint Guidonw</option>
+
+              <option value="valeur6">Couples : Saint Jean-Paul II</option>
+
+              <option value="valeur7">Cruciverbistes : Saint Laurent</option>
+
+              <option value="valeur8">Curés : Saint Jean-Marie Vianney</option>
+
+              <option value="valeur9">Écologistes : Saint François d'Assise</option>
+
+              <option value="valeur10">Étudiants : Saint Joseph de Cupertino</option>
+
+              <option value="valeur11">Étourdis : Sainte Prune</option>
+
+              <option value="valeur12">Fiancés : Saint Valentin</option>
+
+              <option value="valeur13">Handicapés : Sainte Lydwine</option>
+
+              <option value="valeur14">Ivrognes : Saint Urbain</option>
+
+              <option value="valeur15">Jeunes filles à marier : Sainte Catherine</option>
+
+              <option value="valeur16">Maris trompés : Saint Gengoult</option>
+
+              <option value="valeur17">Pèlerins : Jacques de Zébédée</option>
+
+              <option value="valeur18">Sans-abri : Saint Pierre de Betancur</option>
+
+              <option value="valeur19">Troubles psychiques : Saint Romuald</option>
+
+              <option value="valeur20">Voyageurs : Saint Christophe</option>
+
+            </select>
+ 
+             
+
+
+            </div>
+            <div class="msg">
+              <textarea placeholder="Message"></textarea>
+               <div class="btn">
+                <p>Envoyer</p>
+                <a href="#nogo">Déja inscrit ?</a>
+               </div>
+            </div>
+           
+          </div>
+          <img class="img" src="img2.png">
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
