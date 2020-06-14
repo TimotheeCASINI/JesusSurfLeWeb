@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <script src="https://kit.fontawesome.com/7b2336f025.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  href="newsletter.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="author" content="Timothée&Balthazar">
+    <meta name="description" content="L'église se modernise ! Accedez à toute les informations sur les grands personnages de la chrétienté, des quiz et bien plus encore !">
+    <title>JesusSurfLeWeb.com</title>
+  </head>
+  <body>
+  	<header>
+    <div class="conteneur_titre">
+      <img class ="logo" src="https://w7.pngwing.com/pngs/988/529/png-transparent-jesus-christ-illustration-christian-cross-drawing-crucifixion-of-jesus-christ-christianity-logo-monochrome.png" style="float" alt="logo" title="logo">
+        <div class="titre">
+          <h1>JésusSurfLeWeb</h1>
+        </div>
+    </div>
+    <nav>
+        <ul class="navbar">
+          <li><a href="acceuil.html" title="Accueil">Accueil</a></li>
+          <li><a href="rencontre.html" title="Service de rencontre">Rencontre Un Fidèle</a></li>
+          <li><a href="quizz.html" title="Quizz">Testez vôtre foi</a></li>
+            <li><a href="toutsavoir.html" title="Les icônes de la chrétienté">Tout savoir</a></li>
+            <li><a href="newsletter.html" title="NewsLetter">Rejoindre ton Seigneur</a></li>
+        </ul>
+    </nav>
+   <a class="contact" href="contact.html"><button>Contact</button></a>
+  			
+  		</header>
+      <main >
+        <section id="sec1" class="sec1">
+          <div class="banniere1">
+            <div class="banniere1-text">
+              <p><br /> Jésus te parle directement par messagerie electronique!<br /> Grâce au miracle de la technologie (et à Dieu!) JésusSurfLeWeb peut te contacter gratuitement pour partager avec toi les dernières actualitées concernant le Christ notre Sauveur<br /> Inscris toi dès maintenant et garantis ta place au Paradis!<br /> Jésus est Amour<p>
+            </div>
+          </section>
+        <section id="sec2" class="sec2">
+        <form action="/emplacement-URL-fictif" method="post" name="formulaire">
+          <label for="formulaire" id="form"> <b>Rejoinds la Newsletter de ton Seigneur</b></label>
+          <div id="champs">
+            
+            <input type="text" id="prename" name="user_prename" required maxlength="20" minlength="1" placeholder="Prénom" pattern = "[a-zA-ZàâæçéèêëîïôœùûüÿÀÂÆÇnÉÈÊËÎÏÔŒÙÛÜŸ-]+" required>
+            <span class="error" aria-live="polite" title="Veuillez saisir un prénom"></span>
+            <input type="text" id="name" name="user_name" required maxlength="15" minlength="1" placeholder="Saint Patron" pattern = "[A-Za-z' -]+" required>
+            <span class="error" aria-live="polite" title="Veuillez saisir votre Saint Patron"></span>
+            <input type="email" id="mail" name="user_mail" required minlength="1" maxlength="60" placeholder="exemple@adresse.com" pattern = ".+@.+\..+" required>
+            <span class="error" aria-live="polite" title="Veuillez saisir un email valide"></span>
+            <select name="user_role" id="role">
+              <option value="valeur1">Fidele</option>
+              <option value="valeur2">Saint</option>
+              <option value="valeur3">pretre</option>
+            </select>
+            </section>
+ 
+          </div>
+          <div id="bouton1">
+            <button type="button" id="bouton_add" class="majuscule" style="font: 10px Verdana;">Ajouter</button>
+            
+          </div>
+        </form>
+        
+        </section>
+	      
+  
+    
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <script src="https://kit.fontawesome.com/7b2336f025.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"  href="quizz.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="author" content="Timothée&Balthazar">
+    <meta name="description" content="L'église se modernise ! Accedez à toute les informations sur les grands personnages de la chrétienté, des quiz et bien plus encore !">
+    <title>JesusSurfLeWeb.com</title>
+    <script defer src="quizz.js"></script>
+    <script>window.onload = function(){
+    var context = new AudioContext();}</script>
+  </head>
+  <body>
+      <header>
+        <div class="conteneur_titre">
+         <img class ="logo" src="https://w7.pngwing.com/pngs/988/529/png-transparent-jesus-christ-illustration-christian-cross-drawing-crucifixion-of-jesus-christ-christianity-logo-monochrome.png" style="float" alt="logo" title="logo">
+          <div class="titre">
+           <h1>JésusSurfLeWeb</h1>
+          </div>
+        </div>
+        <nav>
+          <ul class="navbar">
+            <li><a href="acceuil.html" title="Accueil">Accueil</a></li>
+            <li><a href="rencontre.html" title="Service de rencontre">Rencontre Un Fidèle</a></li>
+            <li><a href="quizz.html" title="Quizz">Testez vôtre foi</a></li>
+            <li><a href="toutsavoir.html" title="Les icônes de la chrétienté">Tout savoir</a></li>
+            <li><a href="newsletter.html" title="NewsLetter">Rejoindre ton Seigneur</a></li>
+          </ul>
+        </nav>
+        <a class="contact" href="contact.html"><button>Contact</button></a>
+      </header>
+      
+     <main class="">
+      <section class="sct1">
+        <div class="wave">
+
+        </div>
+      </section>
+      <div class="principal">
+        <h2 class="main_titre">
+        Le Saint Quizz
+        </h2>
+        <a class="scroll" href="#section2" title="Go vers la section 2"><button> <i class="fas fa-angle-double-down"></i>      En savoir plus      <i class="fas fa-angle-double-down"></i></button></a>
+
+        <div class="main_img">
+          <img class ="img" src="https://www.goodstickers.fr/19162/la-creation-d-adam.jpg">
+        </div>
+      </div>
+          <section id="section2" class="section2">
+            <div class="container">
+              <div class="aera1"><i class="fas fa-cross"></i><i class="fas fa-cross"></i><i class="fas fa-cross"></i><i class="fas fa-cross"></i><i class="fas fa-cross"></i><i class="fas fa-cross"></i></div>
+              <div class="aera2"></div>
+              <div class="aera3"></div>
+               <div class="aera4"></div>
+              <div id="question-container" class="qst hidden">
+                <div id="question" class="késtion">Question</div>
+                <div id="reponse-btn" class="btn-rep">
+                  <button class="btn">Reponse1</button>
+                  <button class="btn">Reponse2</button>
+                  <button class="btn">Reponse3</button>
+                  <button class="btn">Reponse4</button>
+                </div>
+              </div>
+              <div class="controle">
+                <button id="start-btn" class="start" >Jouer</i></button>
+                <button id="next-btn" class="next hidden"><i class="fas fa-forward"></i></button>
+              </div>
+            </div> 
+            <div class="container2">
+              <div class="inner">
+                <span><i class="fas fa-info-circle fa-2x"></i></span>
+                <h1>Le petit coup de pouce</h1>
+                <p id="txt">Tu trouvera ici les infos pour chaque questions !</p>
+              </div>
+            </div>
+            <div class="banniere4">
+              <span></span>
+              <span></span>
+              <span></span>
+              <div class="banniere4-text">
+                <h2>Chaque point est un pas de plus vers la rédemption</h2>
+                <p class="texte"><br />Si tu obtiens les 10 points, une surprise s'offira à toi ...<br /><br />Ton nombre de points actuel est :</p>
+                <div class="icon" id="icon"><i class="far fa-times-circle fa-4x"></i></div>
+                <div class ='n'>
+                  <p class="nombre" id="nombre"></p>
+                </div>
+                <button id="btn_cado" onclick="show_cado(); return false"><i class="fas fa-gift fa-2x"></i></button>
+              </div>
+            </div>
+          
+          <div class="flip_card_container" id="maincontainer">
+            <div class="flip_card" id="card">
+              <div class="flip_front" id="front">
+                <img src="https://i.skyrock.net/2297/39262297/pics/1614683472_small.jpg">
+              </div>
+              <div class="flip_back">
+                <h3>Bravo, tu as démontré ta foi avec succès !</h3>
+                <p>Tu as réussi l'epreuve de foi ! Toute nos félicitations, tu as gagné une place VIP au côté de l'Eternel !!!<br />
+                  Tu beneficie également d'un droit d'accès illimité aux meilleurs soirées du Jardin d'Eden.
+                  Alors .... Heureux ?
+                </p>
+                <button><i onclick="noshow(); return false" class="fas fa-times"></i></button>
+              </div>
+            </div>
+          </div>
+          </section>
+    </main>
+  </body>
+</html>
